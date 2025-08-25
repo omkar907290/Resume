@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Engineering Professional Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .resume-container {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .section-title {
+            position: relative;
+            padding-left: 1rem;
+        }
+        
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+        }
+        
+        .skill-bar {
+            transition: all 0.3s ease;
+        }
+        
+        .skill-bar:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .project-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-4px);
+            border-left-color: #667eea;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+    </style>
+</head>
+<body class="min-h-screen py-8 px-4">
+    <div class="max-w-4xl mx-auto resume-container rounded-2xl shadow-2xl overflow-hidden animate-fade-in">
+        <!-- Header Section -->
+        <header class="bg-gradient-to-r from-blue-600 to-purple-700 text-white p-8">
+            <div class="flex flex-col md:flex-row items-center gap-6">
+                <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                    <img src= "D:\Java Notes\WhatsApp Image 2025-08-25 at 11.03.55_13b13935.jpg" alt="Professional headshot of a computer Engineering graduate with confident expression, wearing business casual attire against a neutral background" class="w-full h-full object-cover" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2U1ZTVlNSIvPjx0ZXh0IHg9IjEwMCIgeT0iMTAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM2NjciPkNvbXB1dGVyIFNjaWVuY2UgR3JhZHVhdGU8L3RleHQ+PC9zdmc+'">
+                </div>
+                <div class="text-center md:text-left flex-1">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-2">OMKAR KORADE</h1>
+                    <p class="text-xl opacity-90 mb-4">Computer Engineering Diploma Graduate</p>
+                    <p class="opacity-80">Passionate Software Developer | Problem Solver | Tech Enthusiast</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="p-8">
+            <!-- Contact & Quick Info -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
+                    <i class="fas fa-envelope text-blue-600 text-xl"></i>
+                    <div>
+                        <p class="text-sm text-gray-600">Email</p>
+                        <p class="font-semibold">omkarkorade1065@gmail.com</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
+                    <i class="fas fa-phone text-blue-600 text-xl"></i>
+                    <div>
+                        <p class="text-sm text-gray-600">Phone</p>
+                        <p class="font-semibold">+91 8087671065</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
+                    <i class="fas fa-map-marker-alt text-blue-600 text-xl"></i>
+                    <div>
+                        <p class="text-sm text-gray-600">Location</p>
+                        <p class="font-semibold">Tal-Newasa Dist-A.nagar</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Left Column -->
+                <div class="lg:col-span-2">
+                    <!-- Professional Summary -->
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold mb-4 section-title">PROFESSIONAL SUMMARY</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                            Recent Computer Engineering Diploma graduate with strong foundation in software development principles and programming. 
+                            Experience in developing web applications, database management, and problem-solving complex technical challenges. 
+                            Passionate about creating efficient, scalable solutions and continuously learning new technologies. 
+                            Seeking an entry-level position to apply academic knowledge and contribute to innovative projects.
+                        </p>
+                    </section>
+
+                    <!-- Education -->
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold mb-4 section-title">EDUCATION</h2>
+                        <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500 mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800">Diploma in Computer Engineering</h3>
+                            <p class="text-blue-600 font-medium">Vishwabharti college of engineering</p>
+                            <p class="text-gray-600">September 2023 - June 2026</p>
+                            <p class="text-gray-700 mt-2">GPA: 3.8/4.0 | Relevant Coursework: Data Structures, Algorithms, Web Development, Database Systems, Software Engineering</p>
+                        </div>
+                    </section>
+
+                    <!-- Projects -->
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold mb-4 section-title">PROJECTS</h2>
+                        
+                        <div class="project-card bg-white p-6 rounded-lg shadow-sm mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800">E-Commerce Platform</h3>
+                            <p class="text-blue-600">Full Stack Web Application</p>
+                            <p class="text-gray-700 mt-2">
+                                Developed a complete e-commerce solution with React frontend, Node.js backend, and MongoDB database. 
+                                Implemented user authentication, payment processing, and inventory management features.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">React</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Node.js</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">MongoDB</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card bg-white p-6 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-semibold text-gray-800">Task Management App</h3>
+                            <p class="text-blue-600">Mobile Application</p>
+                            <p class="text-gray-700 mt-2">
+                                Created a cross-platform task management application using Flutter with features including 
+                                user authentication, real-time synchronization, and push notifications.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Flutter</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Firebase</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Dart</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Column -->
+                <div>
+                    <!-- Skills -->
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold mb-4 section-title">SKILLS</h2>
+                        
+                        <div class="skill-bar bg-white p-4 rounded-lg shadow-sm mb-3">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">JavaScript</span>
+                                <span class="text-blue-600">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar bg-white p-4 rounded-lg shadow-sm mb-3">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">java</span>
+                                <span class="text-blue-600">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar bg-white p-4 rounded-lg shadow-sm mb-3">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">C++</span>
+                                <span class="text-blue-600">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar bg-white p-4 rounded-lg shadow-sm mb-3">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Python</span>
+                                <span class="text-blue-600">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Database Management</span>
+                                <span class="text-blue-600">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Languages -->
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold mb-4 section-title">LANGUAGES</h2>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="font-semibold">English</span>
+                                <span class="text-blue-600 text-sm">Native</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold">Spanish</span>
+                                <span class="text-blue-600 text-sm">Intermediate</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Certifications -->
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-bold mb-4 section-title">CERTIFICATIONS</h2>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="mb-3">
+                                <h3 class="font-semibold">AWS Certified Cloud Practitioner</h3>
+                                <p class="text-sm text-gray-600">Amazon Web Services - 2026</p>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Google IT Support Professional</h3>
+                                <p class="text-sm text-gray-600">Google - 2025</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Interests -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 section-title">INTERESTS</h2>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Open Source</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">AI/ML</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Cybersecurity</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">IoT</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Photography</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white p-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                    <i class="fab fa-linkedin-in text-2xl"></i>
+                </a>
+                <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+                <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                    <i class="fab fa-twitter text-2xl"></i>
+                </a>
+            </div>
+            <p class="text-gray-400">© 2025 omkar korade. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            // Observe all sections for animation
+            document.querySelectorAll('section').forEach(section => {
+                section.style.opacity = 0;
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'all 0.6s ease-out';
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
+
